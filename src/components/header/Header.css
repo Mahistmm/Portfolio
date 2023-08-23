@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Rubik:wght@300;400;500&display=swap");
+
+header {
+  position: fixed;
+  top: 5px;
+  width: 100%;
+}
+
+.header_nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  margin: 10px 0px;
+  padding: 0px 10px;
+  background-color: transparent;
+  font-family: "Rubik", sans-serif;
+}
+
+nav a {
+  margin: 0px 20px;
+  padding: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 200ms ease-in-out;
+}
+
+nav a span {
+  letter-spacing: 1px;
+  color: white;
+}
+
+nav a span:hover {
+  transform: scale(1.05);
+  padding: 10px;
+  border-radius: 2px;
+  background-color: blue;
+}
+
+.contact {
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: red;
+}
+
+.contact:hover {
+  background-color: rgb(243, 95, 152);
+  padding: 12px;
+}
+
+nav button {
+  display: none;
+  cursor: pointer;
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  background-color: white;
+}
+
+.nav_open {
+  display: none;
+}
+
+.nav_close {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  nav button {
+    display: flex;
+  }
+  .header_center {
+    display: none;
+  }
+  .header_box {
+    display: flex;
+    color: white;
+  }
+  .header_box {
+    position: absolute;
+    top: 35px;
+    right: 35px;
+    display: flex;
+    height: 200px;
+    border-radius: 2px;
+    padding: 10px;
+    flex-direction: column;
+    background-color: whitesmoke;
+  }
+
+  .header_box a {
+    color: black;
+  }
+}

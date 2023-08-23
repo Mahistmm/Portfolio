@@ -1,0 +1,13 @@
+.about {
+  background-color: rgb(215, 247, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.about > p {
+  width: 60%;
+  margin: 0px auto;
+}
